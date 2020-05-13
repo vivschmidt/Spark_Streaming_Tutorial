@@ -14,8 +14,8 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 3) Work with Spark
 - Line Count
 
---Start Spark-Shell
---./bin/spark-shell
+#Start Spark-Shell
+#./bin/spark-shell
 
 Insert textfile into Scala
 scala> val input = sc.textFile("input.txt")
