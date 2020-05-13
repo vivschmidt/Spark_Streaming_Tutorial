@@ -18,8 +18,7 @@ $ ./bin/spark-shell
 - Insert textfile into Scala
 $ scala> val input = sc.textFile("input.txt")
 
-3.1) Count Lines
-$ scala>input.count()
+3.1) Count Lines: scala>input.count()
 
 - Word Count (https://dzone.com/articles/wordcount-with-spark-and-scala)
 - Create a scala function 
