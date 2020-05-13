@@ -2,10 +2,10 @@
 
 This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tutorial; 
 
-1) Prerequisite
-CentOS 7
-Java Developer Kit JDK 8 
-Scala
+1) Prerequisites
+- CentOS 7
+- Java Developer Kit JDK 8 
+- Scala
 
 Download Apache Spark Hadoop 2.7
 wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz 
