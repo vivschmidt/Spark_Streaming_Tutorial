@@ -7,10 +7,9 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 - Java Developer Kit JDK 8 
 - Scala
 
-#Download Apache Spark Hadoop 2.7
-wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz 
-
-Create textfile based on input.txt
+2) Spark 
+- Download Apache Spark Hadoop 2.7 (wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz)
+- Create textfile based on input.txt
 
 # Line Count
 
