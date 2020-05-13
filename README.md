@@ -11,10 +11,11 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 - Download Apache Spark Hadoop 2.7 (wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz)
 - Create textfile based on input.txt
 
-# Line Count
+3) Work with Spark
+- Line Count
 
-Start Spark-Shell
-./bin/spark-shell
+--Start Spark-Shell
+--./bin/spark-shell
 
 Insert textfile into Scala
 scala> val input = sc.textFile("input.txt")
@@ -56,7 +57,7 @@ Run WordCountScala.scala in Spark-Shell
 # Show total no of words of a document
 scala> words.collect
 
-# Show total number of words incl multiples
+# Show total no of words incl multiples
 scala> words.count()
 
 
