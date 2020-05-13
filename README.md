@@ -1,12 +1,12 @@
-## Spark Streaming
+# Spark Streaming
 
-# This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tutorial
-# Download Apache Spark Hadoop 2.7
+This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tutorial; 
+
+1) Download Apache Spark Hadoop 2.7
+
 wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz 
-# Create a TextFile: input.txt  (see: https://www.dezyre.com/apache-spark-tutorial/spark-tutorial)
-# Insert text
-nano input.txt
-# text example "In as name to here them deny wise this. As rapid woody my he me which. Men but they fail shew just wish next put. Led all visitor musical calling nor her. Within coming figure sex things are. Pretended concluded did repulsive education smallness yet yet described. Had countryman his pressed shewing. No gate dare rose he. Eyes year if miss he as upon."
+
+2) Create textfile based on input.txt
 
 I. Line Count
 
