@@ -2,53 +2,62 @@
 
 This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tutorial; 
 
-1) Download Apache Spark Hadoop 2.7
+1) Prerequisite
+CentOS 7
+Java Developer Kit JDK 8 
+Scala
 
+Download Apache Spark Hadoop 2.7
 wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz 
 
-2) Create textfile based on input.txt
+Create textfile based on input.txt
 
-I. Line Count
+# Line Count
 
-#Start Spark-Shell
+Start Spark-Shell
 ./bin/spark-shell
-#Insert TestFile into Scala
+
+Insert textfile into Scala
 scala> val input = sc.textFile("input.txt")
+
 #Count Lines
 scala>input.count()
 
-II. Word Count
-#Counts how often words are used in a document
-#Create a scala function https://dzone.com/articles/wordcount-with-spark-and-scala
+# Word Count - Counts how often words are used in a document - https://dzone.com/articles/wordcount-with-spark-and-scala
+
+#Create a scala function 
 nano WordCountScala.scala
-#type function code
+
+#Type function code
 val input = sc.textFile("input.txt")
 val count = input.flatMap(line => line.split (" "))
 .map(word => (word,1))
 .reduceByKey(_+_)
-#run wordcountscala.scala in spark-shell
+
+Run wordcountscala.scala in spark-shell
 ./bin/spark-shell -i WordCountScala.scala
-#run commmand count.collect (to show the functions output)
+
+Show function output)
 scala> count.collect
 
-#run command count.count() - to see the toatl number of words (without double)
+Show total number of words (exclude doubles)
 scala> count.count()
 
-#total word count
-#open your scala function
+# Count words in total
+Open your scala function
 nano WordCountScala.scala
 
-#add the following function code
+Add the following function code
 val words = input.flatMap(line => line.split(" ")
 .map(word => (word))
 
-#run WordCountScala.scala in Spark-Shell
+Run WordCountScala.scala in Spark-Shell
 ./bin/spark-shell -i WordCountScala.scala
 
-#Rund command words.collect (shows you the total words of the document)
+# Show total no of words of a document
 scala> words.collect
 
-#rund command words.count() - see the total number of words (incl multiples)
+# Show total number of words incl multiples
 scala> words.count()
 
 
