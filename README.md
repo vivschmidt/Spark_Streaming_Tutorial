@@ -12,7 +12,7 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 - Create textfile based on input.txt
 
 3) Work with Spark (Line Count)
-- Start Spark-Shell
+- Start Spark-Shell in Spark directory 
 $ ./bin/spark-shell
 
 - Insert textfile into Scala
