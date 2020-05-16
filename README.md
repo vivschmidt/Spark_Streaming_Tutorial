@@ -3,7 +3,7 @@
 This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tutorial; 
 
 1) Prerequisites
-- CentOS 7
+- CentOS 7 or Ubuntu
 - Java Developer Kit JDK 8 
 - Scala
 
