@@ -10,6 +10,7 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 2) Spark 
 - Download Apache Spark Hadoop 2.7 (wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz)
 - Create textfile based on input.txt
+- Unpack Spark file with tar -xvf spark-2.1.1-bin-hadoop2.7.tgz
 
 3) Work with Spark (Line Count)
 - Start Spark-Shell in Spark directory 
