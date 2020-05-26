@@ -22,14 +22,7 @@ $ scala> val input = sc.textFile("input.txt")
 3.1) Count Lines: scala>input.count()
 
 - Word Count (https://dzone.com/articles/wordcount-with-spark-and-scala)
-- Create a scala function 
-$ nano WordCountScala.scala
-
-- Type function code
-$ val input = sc.textFile("input.txt")
-$ val count = input.flatMap(line => line.split (" "))
-$ .map(word => (word,1))
-$ .reduceByKey(_+_)
+4) Create a scala function based on WordCountScala.scala
 
 - Run wordcountscala.scala in spark-shell
 $ ./bin/spark-shell -i WordCountScala.scala
@@ -48,8 +41,7 @@ $ nano WordCountScala.scala
 $ val words = input.flatMap(line => line.split(" ")
 $ .map(word => (word))
 
-- Run WordCountScala.scala in Spark-Shell
-$ ./bin/spark-shell -i WordCountScala.scala
+- Re-run WordCountScala.scala in Spark-Shell
 
 3.4) Show total no of words of a document
 $ scala> words.collect
