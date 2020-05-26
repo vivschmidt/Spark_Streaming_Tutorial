@@ -9,7 +9,7 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 
 2) Spark 
 - Download Apache Spark Hadoop 2.7 (wget https://downloads.apache.org/spark/spark-2.4.5/spark-2.4.5-bin-hadoop2.7.tgz)
-- Create textfile based on input.txt
+- Create textfile based on input.md
 - Unpack Spark file with tar -xvf spark-2.1.1-bin-hadoop2.7.tgz
 
 3) Work with Spark (Line Count)
@@ -17,7 +17,7 @@ This Tutorial is based on https://www.dezyre.com/apache-spark-tutorial/spark-tut
 $ ./bin/spark-shell
 
 - Insert textfile into Scala
-$ scala> val input = sc.textFile("input.txt")
+$ scala> val input = sc.textFile("input.md")
 
 3.1) Count Lines: scala>input.count()
 
